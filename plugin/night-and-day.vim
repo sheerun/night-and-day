@@ -191,10 +191,10 @@ endfor
 
 " lightline theme switching
 function! NdSetLightlineColorscheme(name)
-    let g:lightline = { 'colorscheme': a:name }
-    call lightline#init()
-    call lightline#colorscheme()
-    call lightline#update()
+  let g:lightline['colorscheme'] = a:name
+  call lightline#init()
+  call lightline#colorscheme()
+  call lightline#update()
 endfunction
 
 " switch to scheduled theme if not already active
